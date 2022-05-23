@@ -1,17 +1,16 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import Home from './pages/Home'
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 import Login from "./pages/Login";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-
+ const SERVER_URL = "http://localhost:5000";
 function App() {
-
-  const [user,setUser] = useState(null)
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     const getUser = () => {
-      fetch("http://localhost:5000/auth/login/success", {
+      fetch(`${SERVER_URL}/auth/login/success`, {
         method: "GET",
         credentials: "include",
         headers: {

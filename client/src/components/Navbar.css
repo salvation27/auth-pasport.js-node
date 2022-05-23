@@ -1,0 +1,19 @@
+.navbar {
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: c;
+}
+.navbar_foto img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+   
+}
+.navbar_foto {
+ display: flex;
+align-items: center;
+}
+.navbar_name {
+    margin-left: 20px;
+}

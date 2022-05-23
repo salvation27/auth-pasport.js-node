@@ -24,6 +24,10 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+  res.send("Server run");
+});
+
 app.use("/auth", authRoute);
 
 app.listen(PORT, () => {
